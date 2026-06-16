@@ -1,0 +1,111 @@
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+}
+.heading{
+    margin:5%;
+}
+body.light,
+body.dark{
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+body.light{
+    background-image: url(resources/light.png);
+    color:black;
+}
+
+body.dark{
+    background-image: url(resources/dark.png);
+    color: beige;
+}
+
+.task{
+    display: flex;
+    width: 100%;
+
+}
+
+button{
+    flex: 1;
+    margin : 2%;
+    border-radius: 10px;
+    padding: 5px 0px;
+    cursor: pointer;
+    background-image: url(resources/light.png);
+}
+
+.list{
+    margin-top: 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.in{
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    align-items: center;
+    width: 100%;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+}
+input{
+    text-align: center;
+    margin : 2%;
+    border-radius: 10px;
+    padding: 5px 0px;
+    cursor: pointer;
+    background-image: url(resources/light.png);
+}
+
+#sub{
+    width: 25% !important;
+}
+
+.hide{
+    display: none !important;
+}
+
+.list div{
+    display: flex;
+    flex:1;
+    border-radius: 10px;
+}
+
+.card{
+    border: 3px solid black;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    width: 90%;
+    padding:20px;
+    margin:20px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+.card input[type="checkbox"]{
+    flex: 1 !important;
+}
+.card span{
+    flex: 4 !important;
+}
+.dark .card{
+    background-color: rgb(64, 11, 149);
+}
+.light .card{
+    background-color: bisque;
+}
+.card p{
+    margin: 0;
+}
+
